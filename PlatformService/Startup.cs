@@ -81,7 +81,7 @@ namespace PlatformService {
                 // Optional, allows us to serve the proto file to the client
                 endpoints.MapGet("/protos/platforms.proto",
                     async context => {
-                        await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+                        await context.Response.WriteAsync(File.ReadAllText("../Protos/platforms.proto"));
                     });
             });
 
